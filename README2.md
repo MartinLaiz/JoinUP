@@ -1,3 +1,0 @@
-# JoinUP
-
-Hola
