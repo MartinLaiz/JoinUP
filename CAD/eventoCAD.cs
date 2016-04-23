@@ -5,48 +5,46 @@ using System.Web;
 
 namespace WebApplication1.CAD
 {
-    public class usuarioCAD
+    public class eventoCAD
     {
         //
         private string conexion;
 
-        public usuarioCAD(){
+        public eventoCAD(){
             //Adquiere la cadena de conexión desde un único sitio
         }
 
-        public bool CrearUsuario(usuarioEN usuario)
+        public bool Crearevento(eventoEN evento)
         {
             bool ok = false;
-            //crear usuario
+            //crear un evento
 
             return ok;
         }
 
-        public bool ActualizarUsuario(usuarioEN usuario)
+        public bool ActualizarEvento(eventoEN evento)
         {
             bool ok = false;
-            //Actualiza usuario
+            //Actualiza el evento
 
             return ok;
         }
 
-        public bool BorrarUsuario(usuarioEN usuario)
+        public bool BorrarEvento(eventoEN evento)
         {
             bool ok = false;
-            //Borra usuario
+            //Borra un lugar
 
             return ok;
         }
 
-        public usuarioEN dameUsuario(string correo)
+        public eventoEN dameEvento(int id)
         {
-            usuarioEN usuario = new usuarioEN();
-            //Muestra usuario
+            eventoEN evento = new eventoEN();
+            //Muestra un evento
 
-            return usuario;
+            return evento;
         }
-
-
 
     }
 }
