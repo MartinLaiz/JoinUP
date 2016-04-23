@@ -15,7 +15,7 @@ namespace WebApplication1.CAD
             //Adquiere la cadena de conexión desde un único sitio
         }
 
-        public bool Crearevento(eventoEN evento)
+        public bool anadirvento(eventoEN evento)
         {
             bool ok = false;
             //crear un evento
@@ -23,7 +23,7 @@ namespace WebApplication1.CAD
             return ok;
         }
 
-        public bool ActualizarEvento(eventoEN evento)
+        public bool actualizarEvento(eventoEN evento)
         {
             bool ok = false;
             //Actualiza el evento
@@ -31,7 +31,7 @@ namespace WebApplication1.CAD
             return ok;
         }
 
-        public bool BorrarEvento(eventoEN evento)
+        public bool borrarEvento(eventoEN evento)
         {
             bool ok = false;
             //Borra un lugar
@@ -47,28 +47,28 @@ namespace WebApplication1.CAD
             return evento;
         }
 
-        public DataSet dameEventoCat(string categoria)
+        public DataSet dameEventosCat(string categoria)
         {
             DataSet dsEvento = null;
             dsEvento = new DataSet();
             return dsEvento;
         }
 
-        public DataSet dameEventoCiudad(string ciudad, string provincia)
+        public DataSet dameEventosCiudad(string ciudad, string provincia)
         {
             DataSet dsEvento = null;
             dsEvento = new DataSet();
             return dsEvento;
         }
 
-        public DataSet dameEventoLugar(lugarEN lugar)
+        public DataSet dameEventosLugar(lugarEN lugar)
         {
             DataSet dsEvento = null;
             dsEvento = new DataSet();
             return dsEvento;
         }
 
-        public DataSet eventosDe(lugarEN lugar)
+        public DataSet dameEventosFecha(DateTime fecha)
         {
             DataSet dsEvento = null;
             dsEvento = new DataSet();
@@ -82,11 +82,25 @@ namespace WebApplication1.CAD
             return invitado;
         }
 
-        public bool eliminarInvitacion(usuarioEN usuario,eventoEN evento)
+        public bool eliminarInvitacion(usuarioEN usuario, eventoEN evento)
         {
             bool eliminado = false;
 
             return eliminado;
+        }
+
+        public bool asiste(usuarioEN usuario)
+        {
+            bool asiste = false;
+
+            return asiste;
+        }
+
+        public DataSet asistentes(usuarioEN usuario)
+        {
+            DataSet dsUsuarios = null;
+            dsUsuarios = new DataSet();
+            return dsUsuarios;
         }
 
     }

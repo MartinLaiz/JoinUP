@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WebApplication1.EN;
 
 namespace WebApplication1.CAD
 {
@@ -46,7 +47,12 @@ namespace WebApplication1.CAD
             return usuario;
         }
 
+        public usuarioEN asistir(eventoEN evento)
+        {
+            usuarioEN usuario = new usuarioEN();
+            //Muestra usuario
 
-
+            return usuario;
+        }
     }
 }
