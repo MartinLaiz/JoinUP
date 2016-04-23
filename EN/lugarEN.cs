@@ -7,9 +7,11 @@ namespace WebApplication1.EN
 {
     public class lugarEN
     {
-        private string direccion; //Estaba nombre
+        private string nombre;
+        private string direccion; 
         private string descripcion;
         private string foto_lugar;
+
         public string Nombre
         {
             get { return nombre; }

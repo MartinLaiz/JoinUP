@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CAD\comentarioCAD.cs" />
+    <Compile Include="CAD\eventoCAD.cs" />
+    <Compile Include="CAD\lugarCAD.cs" />
     <Compile Include="CAD\usuarioCAD.cs" />
     <Compile Include="EN\comentarioEN.cs" />
     <Compile Include="EN\eventoEN.cs" />
