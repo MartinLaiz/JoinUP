@@ -26,17 +26,13 @@ Usuario:
     Modificar: Modifica un usuario 
     Consultar: Muestra el usuario 
     Eliminar: Elimina un usuario 
-    
     Hacer amigo: 
     Deshacer amigo:
     Comentar: 
     Asistir: Dado un evento asistir al evento
     Borrar asistencia: Dado un evento al que asistes, eliminar la asistencia
     Borrar invitación: Dado un evento al que estás invitado, no asistir
-    
-    
-    
-    
+   
 Ciudad: 
     Añadir: Añade una ciudad
     Borrar: Borra una ciudad
