@@ -7,7 +7,7 @@ namespace WebApplication1.EN
 {
     public class lugarEN
     {
-        private string nombre;
+        private string direccion; //Estaba nombre
         private string descripcion;
         private string foto_lugar;
         public string Nombre
@@ -26,6 +26,12 @@ namespace WebApplication1.EN
         {
             get { return foto_lugar; }
             set { foto_lugar = value; }
+        }
+
+        public string Direccion
+        {
+            get { return direccion; }
+            set { direccion = value; }
         }
     }
 
