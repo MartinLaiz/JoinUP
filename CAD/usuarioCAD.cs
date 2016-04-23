@@ -47,7 +47,23 @@ namespace WebApplication1.CAD
             return usuario;
         }
 
-        public usuarioEN asistir(eventoEN evento)
+        public bool asistir(eventoEN evento)
+        {
+            usuarioEN usuario = new usuarioEN();
+            //Muestra usuario
+
+            return usuario;
+        }
+
+        public usuarioEN borrarAsistencia(eventoEN evento)
+        {
+            usuarioEN usuario = new usuarioEN();
+            //Muestra usuario
+
+            return usuario;
+        }
+
+        public usuarioEN borrarInvitacion(eventoEN evento)
         {
             usuarioEN usuario = new usuarioEN();
             //Muestra usuario

@@ -82,7 +82,7 @@ namespace WebApplication1.CAD
             return invitado;
         }
 
-        public bool eliminarInvitacion(usuarioEN usuario, eventoEN evento)
+        public bool eliminarInvitacion(usuarioEN usuario)
         {
             bool eliminado = false;
 
