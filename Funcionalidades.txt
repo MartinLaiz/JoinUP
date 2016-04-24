@@ -43,4 +43,9 @@ Provincia:
     Borrar: Borra una provincia
     Modificar: Modifica una provincia
 
+Lugar:
+	Añadir: Añade un lugar exacto del evento
+	Modificar: Modifica el lugar del evento
+	Eliminar: Borra el lugar del evento
+
     
