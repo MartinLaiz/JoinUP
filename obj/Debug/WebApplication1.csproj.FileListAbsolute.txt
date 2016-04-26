@@ -1,6 +1,0 @@
-C:\Users\marti\Documents\MEGA\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-C:\Users\marti\Documents\MEGA\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\bin\WebApplication1.dll.config
-C:\Users\marti\Documents\MEGA\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\bin\WebApplication1.dll
-C:\Users\marti\Documents\MEGA\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\bin\WebApplication1.pdb
-C:\Users\marti\Documents\MEGA\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\obj\Debug\WebApplication1.dll
-C:\Users\marti\Documents\MEGA\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\obj\Debug\WebApplication1.pdb
