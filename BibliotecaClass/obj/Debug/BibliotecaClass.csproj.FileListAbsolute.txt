@@ -1,0 +1,5 @@
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\obj\Debug\BibliotecaClass.csprojResolveAssemblyReference.cache
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\bin\Debug\BibliotecaClass.dll
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\bin\Debug\BibliotecaClass.pdb
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\obj\Debug\BibliotecaClass.dll
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\obj\Debug\BibliotecaClass.pdb
