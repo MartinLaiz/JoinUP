@@ -48,10 +48,11 @@ namespace AplicacionWeb
 
         public bool asistir(eventoEN evento)
         {
+            
             usuarioEN usuario = new usuarioEN();
             //Muestra usuario
 
-            return usuario;
+            return true;
         }
 
         public usuarioEN borrarAsistencia(eventoEN evento)

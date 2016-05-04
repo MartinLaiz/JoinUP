@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Configuration;
 
 namespace AplicacionWeb
 {
@@ -11,16 +12,17 @@ namespace AplicacionWeb
         private string conexion;
 
         public eventoCAD(){
+            conexion = ConfigurationManager.ConnectionStrings["DataBase"].ToString();
             //Adquiere la cadena de conexión desde un único sitio
         }
 
         public bool anadirvento(eventoEN evento)
         {
             bool ok = false;
-            //crear un evento
-
+            //añade un evento
             return ok;
         }
+
 
         public bool actualizarEvento(eventoEN evento)
         {

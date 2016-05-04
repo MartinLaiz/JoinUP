@@ -71,7 +71,6 @@
       <DependentUpon>BBDD.mdf</DependentUpon>
     </Content>
     <Content Include="Web.config" />
-    <Content Include="Web1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,13 +79,6 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Web1.aspx.cs">
-      <DependentUpon>Web1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web1.aspx.designer.cs">
-      <DependentUpon>Web1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

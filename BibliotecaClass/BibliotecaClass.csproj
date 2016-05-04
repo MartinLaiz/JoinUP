@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,7 +44,6 @@
     <Compile Include="CAD\eventoCAD.cs" />
     <Compile Include="CAD\lugarCAD.cs" />
     <Compile Include="CAD\usuarioCAD.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="EN\comentarioEN.cs" />
     <Compile Include="EN\eventoEN.cs" />
     <Compile Include="EN\lugarEN.cs" />
