@@ -1,8 +1,0 @@
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AplicacionWeb.dll.config
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AplicacionWeb.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AplicacionWeb.pdb
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\BibliotecaClass.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\BibliotecaClass.pdb
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\obj\Debug\AplicacionWeb.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
