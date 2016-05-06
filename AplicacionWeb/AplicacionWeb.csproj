@@ -59,10 +59,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\hola.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Default.aspx">
       <BrowseToURL>~/</BrowseToURL>
     </Content>
+    <Content Include="Amigos.aspx" />
+    <Content Include="Evento.aspx" />
+    <Content Include="Mapa.aspx" />
     <Content Include="Images\foto.jpg" />
     <Content Include="Perfil.aspx" />
     <Content Include="Images\logo_over_cut.png" />
@@ -103,6 +107,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Amigos.aspx.cs">
+      <DependentUpon>Amigos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Amigos.aspx.designer.cs">
+      <DependentUpon>Amigos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Evento.aspx.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Evento.aspx.designer.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mapa.aspx.cs">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mapa.aspx.designer.cs">
+      <DependentUpon>Mapa.aspx</DependentUpon>
     </Compile>
     <Compile Include="Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>

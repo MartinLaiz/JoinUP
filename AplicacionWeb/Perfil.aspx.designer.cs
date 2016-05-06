@@ -10,6 +10,6 @@
 namespace AplicacionWeb {
     
     
-    public partial class Formulario_web11 {
+    public partial class Formulario_web1 {
     }
 }

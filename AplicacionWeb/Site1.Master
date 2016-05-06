@@ -8,6 +8,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Content/hola.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="Scripts/custom.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -17,17 +20,25 @@
        <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container" style="vertical-align:middle">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle dropdown-toggle" data-toggle="dropdown">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="Amigos.aspx">Amigos</a></li>
+                        <li><a href="Mapa.aspx">Mapa</a></li>
+                        <li><a href="Perfil.aspx">Perfil</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Registro.aspx">Registrarse</a></li>
+                        <li><a href="Login.aspx">Iniciar Sesión</a></li>
+                    </ul>
                     <a runat="server" href="~/"> <img src="Images/logo_out_cut.png" onmouseover="this.src='Images/logo_over_cut.png'" onmouseout="this.src='Images/logo_out_cut.png'" alt="Logo" height="50" width="148" style="vertical-align:middle" /></a>
                  
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Eventos</a></li>
+                        
                         <li><a runat="server" href="~/Amigos.aspx">Amigos</a></li>
                         <li><a runat="server" href="~/Mapa.aspx">Mapa</a></li>
                         <li><a runat="server" href="~/Perfil.aspx">Perfil</a></li>
@@ -35,13 +46,13 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Registrarse</a></li>
-                                <li><a runat="server" href="~/Account/Login">Iniciar sesión</a></li>
+                                <li><a runat="server" href="~/Registro.aspx">Registrarse</a></li>
+                                <li><a runat="server" href="~/Login.aspx">Iniciar sesión</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Perfil" title="Manage your account">Hello!</a></li>
+                                <li><a runat="server" href="~/Perfil.aspx" title="Manage your account">Hello!</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/"  />
                                 </li>
