@@ -48,7 +48,6 @@ namespace AplicacionWeb
 
         public bool asistir(eventoEN evento)
         {
-            
             usuarioEN usuario = new usuarioEN();
             //Muestra usuario
 

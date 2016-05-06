@@ -1,132 +1,16 @@
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\AplicacionWeb.dll.config
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\AplicacionWeb.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\AplicacionWeb.pdb
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Antlr3.Runtime.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\EntityFramework.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\EntityFramework.SqlServer.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Newtonsoft.Json.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Owin.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\System.Web.Optimization.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\System.Web.Providers.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\WebGrease.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\System.Web.Optimization.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Antlr3.Runtime.pdb
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Newtonsoft.Json.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\EntityFramework.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\EntityFramework.SqlServer.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\System.Web.Optimization.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\EntityFramework.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\EntityFramework.SqlServer.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\System.Web.Providers.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.Security.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.Security.Google.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\obj\Debug\AplicacionWeb.dll
-C:\Users\marti\Desktop\AplicacionWeb\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AplicacionWeb.dll.config
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AplicacionWeb.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AplicacionWeb.pdb
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Antlr3.Runtime.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\EntityFramework.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\EntityFramework.SqlServer.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Newtonsoft.Json.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Owin.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\System.Web.Optimization.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\System.Web.Providers.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\WebGrease.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\System.Web.Optimization.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Antlr3.Runtime.pdb
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Newtonsoft.Json.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\EntityFramework.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\EntityFramework.SqlServer.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\System.Web.Optimization.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\EntityFramework.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\EntityFramework.SqlServer.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\System.Web.Providers.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.Security.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.Security.Google.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\obj\Debug\AplicacionWeb.dll
-C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\bin\AplicacionWeb.dll.config
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\bin\AplicacionWeb.dll
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\bin\AplicacionWeb.pdb
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\bin\BibliotecaClass.dll
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\bin\BibliotecaClass.pdb
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.dll
+C:\Users\WRGuide\Desktop\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\bin\AplicacionWeb.dll.config
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\bin\AplicacionWeb.dll
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\bin\AplicacionWeb.pdb
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\bin\BibliotecaClass.dll
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\bin\BibliotecaClass.pdb
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\obj\Debug\AplicacionWeb.dll
+C:\Users\marti\Downloads\Prueba_Final\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
