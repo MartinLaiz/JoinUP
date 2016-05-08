@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="AplicacionWeb.Formulario_web11" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="AplicacionWeb.Formulario_web1" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
         <div class="container" style="margin-top:100px;">
             <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
                 <div class="panel-heading" style="height:55px">
-                    <input style="float:right" type="button" class="btn btn-default" value="Editar" onclick="muestra_oculta('pass')"/>
+                    <input id="btn_usuario" style="float:right" type="button" class="btn btn-default" value="Editar" onclick="muestra_oculta('pass')"/>
                     <label style="font-size:25px"><b>Perfil</b></label>
                 </div>
                 <div class="panel-body">
@@ -16,7 +16,7 @@
 
                             <hr style="width:128px;text-align:left;margin-left:5%"/>
 
-                            <textarea readonly style="margin-left:5%;resize:none;width:128px;height:200px" class="form-control" rows="3">La biografia de tu vida</textarea>
+                            <textarea readonly style="margin-left:5%;resize:none;width:128px;height:133px" class="form-control" rows="3">La biografia de tu vida</textarea>
 
                         </div><div class="col-xs-8">
                         <div>
@@ -51,9 +51,7 @@
                               <option>Mujer</option>
                            </select>
                             <br />
-                           <label class="control-label">Email:</label>
-                           <input style="width:100%;min-width:50px" type="email" class="form-control" id="email_usuario"/>
-
+                           
                         </div>
                     </div>
                 </div>
@@ -62,28 +60,32 @@
             </div>
         </div>
 
-        <div id="pass" class="container" style="margin-top:30px;">
+        <div id="pass" style="display:none;margin-top:30px;" class="container" >
             <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
                 <div class="panel-heading">
                     <label class="control-label">Cambio de contraseña</label>
                 </div>
                     <div class="panel-body">
+                        <label class="control-label">Email:</label>
+                        <input style="width:100%;min-width:50px" type="email" class="form-control" id="email_usuario"/>
+                        <br />
                         <div class="col-xs-4">
                             <label class="control-label">Contraseña actual</label>
                             <input class="form-control" type="password" id="pactual_usuario"/>
+                            
                         </div>
                         <div class="col-xs-4">
                             <label class="control-label">Contraseña Nueva</label>
                             <input class="form-control" type="password" id="pnueva1_usuario"/>
                         </div>
                         <div class="col-xs-4">
-                            <label class="control-label">Repite Contraseña</label>
+                            <label class="control-label">Contraseña Nueva</label>
                             <input class="form-control" type="password" id="pnueva2_usuario"/>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+       
     
         <div id="eventos_usuario" class="container" style="margin-top:30px;">
             <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
