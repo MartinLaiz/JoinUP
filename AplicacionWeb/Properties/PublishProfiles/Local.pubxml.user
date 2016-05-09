@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\WRGuide\Documents\Colgar</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/BBDD.mdf">
+      <publishTime>05/03/2016 08:04:40</publishTime>
+    </File>
+    <File Include="App_Data/BBDD_log.ldf">
+      <publishTime>05/03/2016 08:04:40</publishTime>
+    </File>
+    <File Include="bin/AplicacionWeb.dll">
+      <publishTime>05/04/2016 14:23:14</publishTime>
+    </File>
+    <File Include="bin/BibliotecaClass.dll">
+      <publishTime>05/04/2016 14:23:13</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/04/2016 13:33:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/04/2016 13:39:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="Images/logo_out_cut.png">
+      <publishTime>05/04/2016 13:47:24</publishTime>
+    </File>
+    <File Include="Images/logo_over_cut.png">
+      <publishTime>05/04/2016 13:47:24</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/04/2016 11:49:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>05/04/2016 11:48:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>05/04/2016 11:48:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>05/04/2016 11:48:59</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>05/04/2016 13:48:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/04/2016 14:23:14</publishTime>
+    </File>
+    <File Include="Web1.aspx">
+      <publishTime>05/03/2016 08:04:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

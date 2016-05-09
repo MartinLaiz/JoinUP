@@ -1,0 +1,5 @@
+C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\bin\Release\BibliotecaClass.dll
+C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\bin\Release\BibliotecaClass.pdb
+C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\obj\Release\BibliotecaClass.csprojResolveAssemblyReference.cache
+C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\obj\Release\BibliotecaClass.dll
+C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\obj\Release\BibliotecaClass.pdb
