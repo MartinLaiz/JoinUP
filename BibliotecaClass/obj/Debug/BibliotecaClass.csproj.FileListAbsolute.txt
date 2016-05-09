@@ -1,5 +1,0 @@
-C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\bin\Debug\BibliotecaClass.dll
-C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\bin\Debug\BibliotecaClass.pdb
-C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\obj\Debug\BibliotecaClass.csprojResolveAssemblyReference.cache
-C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\obj\Debug\BibliotecaClass.dll
-C:\Users\WRGuide\Desktop\JoinUP-master\BibliotecaClass\obj\Debug\BibliotecaClass.pdb
