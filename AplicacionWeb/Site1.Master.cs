@@ -11,7 +11,11 @@ namespace AplicacionWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["login"] != null)
+            {
+                registro.Text = Session["login"].ToString();
+                inicio.Visible = false;
+            }
         }
     }
 }

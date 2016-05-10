@@ -2,19 +2,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-     <body>
+
      <div id="generalDefault">
           
-         <div id= "Filtro" background-image:  url(Images/foto.jpg); style="background-image: url('Images/fondo.jpg')"
-               background-size:     1200px 250px>  <!--Parte del filtro-->
+          <!--Imagen de globitos--> 
+         <div id= "Filtro")">
+              <a href="http://localhost:1247/Crear.aspx" title="¿Amigo o enemigo?" itemprop="url" style="width: 800px; height: 800px">
+                 <img src="Images/ce_fondo.jpg" height ="300" style="border: thin solid #000000; width: 1097px;" />
+              </a>
 
-          </div>  <!--Fin: Filtro-->
+          </div>  <!--Fin: Imagen de globitos-->
      
          <div id="Fecha"> <!-- Filtor de fecha-->
              <input type="date"/> 
-             <div id="Crear">  <!-- Boton-->
-                <input type="button" value="Crear Evento" style="float:right"/>
-               </div>  <!-- Fin: Boton--> 
+
           </div>  <!-- Fin: Filtor de fecha--> 
 
 
@@ -22,8 +23,8 @@
          <div id="TodasImagenes">
              <div class="Columna" id="uno">  <!--Primera Columna-->
                  <div id="img1"><!--div donde va la imagen-->
-                      <img src="http://oceanfantasy.es/wp-content/uploads/2016/01/futbol1.jpg" width="200" height ="200" style="border: thin solid #000000;" /
-                          border-right-style: solid; style="border-style: solid" <a href="/http://www.virtualnauta.com/">La home de Virtualnauta</a> > 
+                      <img src="http://oceanfantasy.es/wp-content/uploads/2016/01/futbol1.jpg" width="200" height ="200" style="border: thin solid #000000;" 
+                          border-right-style: solid; style="border-style: solid"/> 
                </div>
                  <br />
                  <div id="img1"><!--div donde va la imagen-->
@@ -63,7 +64,7 @@
                </div>
                  <br />
                  <div id="img1"><!--div donde va la imagen-->
-                   <img src ="http://www.belleza-moda.com/wp-content/themes/bellezamoda/images/BellezaModaLogo2.png" width="200" height ="200" style="border: thin solid #000000;" />
+                   <img src ="http://www.belleza-moda.com/wp-content/themes/bellezamoda/images/BellezaModaLogo2.png" width="200" height ="200" style="border: thin solid #000000; background-color:white;" />
                </div>
                  <br />
 
@@ -103,5 +104,5 @@
 
         </div>  <!--FIN: Muestra eventos recientes-->
      </div>
-   </body>
+
 </asp:Content>

@@ -59,7 +59,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\hola.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Default.aspx">
       <BrowseToURL>~/</BrowseToURL>
@@ -67,7 +66,10 @@
     <Content Include="Amigos.aspx" />
     <Content Include="Evento.aspx" />
     <Content Include="Crear.aspx" />
-    <Content Include="Images\fondo.jpg" />
+    <Content Include="Images\ce_fondo.jpg" />
+    <Content Include="Images\fondo1.jpg" />
+    <Content Include="Images\fondo2.jpg" />
+    <Content Include="Images\fondo3.jpg" />
     <Content Include="Mapa.aspx" />
     <Content Include="Images\foto.jpg" />
     <Content Include="Perfil.aspx" />
@@ -78,8 +80,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Login.aspx" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Registro.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
@@ -146,6 +150,13 @@
       <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +170,13 @@
     </Compile>
     <Compile Include="Web1.aspx.designer.cs">
       <DependentUpon>Web1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

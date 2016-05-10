@@ -113,8 +113,7 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0;
-  font: inherit;
+  margin: 0 0 0 12px;
   color: inherit;
 }
 button {
@@ -1318,6 +1317,7 @@ mark,
 }
 .text-center {
   text-align: center;
+    width: 479px;
 }
 .text-justify {
   text-align: justify;
@@ -6764,9 +6764,8 @@ button.close {
 div#general{
     margin:auto;/*bordes*/
     margin-top:50px;
-    width:1400px;
+    width:1540px;
     height:900px;
-    background-color:white;
 }
 
 
@@ -6777,14 +6776,12 @@ div#containerizq{
     height:800px;
     display:block;
     position:relative;
-    background-color:white;
 }
 
 div#imagenEven{
     float:right;
     width:256px;
     height:256px;
-    background-color:green;
 }
 
 
@@ -6793,8 +6790,7 @@ div#DetallesEve{
     float:right;
     border-top-style: solid;
     width:256px;
-    height:335px;
-    background-color:white;
+    height:198px;
 }
 
 div#CiudadEve{
@@ -6844,37 +6840,31 @@ div#AsistentesEve{
 div#botonesEve{
     width:256px;
     height:219px;
-    background-color:white;
 }
 
 div#Asistir{
     margin-top:15px;
     width:256px;
     height:40px;
-    background-color:white;
 }
 
 div#NoAsistir{
     width:256px;
     height:40px;
-    background-color:white;
 }
 
 div#Crear{
     width:256px;
     height:40px;
-    background-color:white;
 }
 
 div#Modificar{
     width:256px;
     height:40px;
-    background-color:white;
 }
 
 
 div#Centro{
-    background-color:white;
     float:left;
     width:800px;
     height:800px;
@@ -6885,7 +6875,6 @@ div#DescripcionEven{
     margin-left: 30px;
     width:800px;
     height:400px;
-    background-color:white;
 }
 
 div#ComentariosEven{
@@ -6896,8 +6885,14 @@ div#ComentariosEven{
     border-color: white;
     width:800px;
     height:400px;
-    background-color:white;
     border-color: white;
+}
+
+div#Derecha{
+    margin-left:50px;
+    float:left;
+    width:400px;
+    height:400px;
 }
 
 
@@ -6908,7 +6903,7 @@ div#generalDefault{
     margin-top:50px;
     width:1100px;
     height:800px;
-    background-color:white; //red
+
 }
 
 div#Filtro{
@@ -6916,7 +6911,6 @@ div#Filtro{
     margin-top:85px;
     width:1100px;
     height:300px;
-    background-color:white;  //green
 }
 
 div.Categoria{
@@ -6932,21 +6926,20 @@ background-color:rgb(234, 251, 8); //rgb(234, 251, 8)
 }
 
 div#segundo {
-background-color:#ddd; //rgb(234, 251, 8)
+
 }
 
 div#tercero {
-background-color:rgb(251, 8, 142); //rgb(234, 251, 8)
+
 }
 
 div#cuarto {
-background-color:rgb(251, 157, 8); //rgb(234, 251, 8)
+
 }
 
 div#Fecha {
     width:1100px;
     height:50px;
-    background-color:white;  //pink
 }
 
 div#Crear {
@@ -6959,7 +6952,7 @@ div#TodasImagenes {
     margin-top:50px; /*espacio filtro imagenes*/
     width:1200px;
     height:800px;
-    background-color:white; //blue
+  //blue
 }
 
 div.Columna{
@@ -6970,28 +6963,11 @@ div.Columna{
     width: 200px;
     height: 900px;
 }
-div#uno {
-
-background-color:white; //rgb(234, 251, 8)
-}
-
-div#dos {
-background-color:white;  //rgb(234, 8, 251)
-}
-
-div#tres {
-background-color:white; //rgb(251, 8, 142)
-}
-
-div#cuatro {
-background-color:white;  //rgb(251, 157, 8)
-}
-
-div#cinco {
-background-color:white; //#ddd
-}
-
-
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+
+/*parte registro :)*/
+
 

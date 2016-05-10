@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -7,19 +8,59 @@ namespace AplicacionWeb
 {
     public class usuarioCAD
     {
-        //
-        private string conexion;
 
+        SqlConnection connection;
         public usuarioCAD(){
-            //Adquiere la cadena de conexión desde un único sitio
+
+            connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["db"].ConnectionString);
+            
         }
 
         public bool CrearUsuario(usuarioEN usuario)
         {
-            bool ok = false;
-            //crear usuario
+            SqlCommand select = new SqlCommand("Select * from Usuario where Usuario=" + "'" + usuario.Correo + "'",connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            
+            if (lector.HasRows)//si existe el usuaro no se crea
+            {
+                connection.Close();
+                return false;
+            }
+            else
+            {
+                connection.Close();
+                SqlCommand insert = new SqlCommand("Insert into Usuario values ('" + usuario.Correo +"','" + usuario.Nombre + "','"+usuario.Apellidos+"','"+ usuario.Biografia +"','" + usuario.Imagen + "','" + usuario.Genero +"','" + usuario.Edad + "','" + usuario.Pass + "');",connection);
+                connection.Open();
 
-            return ok;
+                int ret = insert.ExecuteNonQuery();//ejecutar la insert
+
+                if (ret > 0)//sihay aceptada se interta
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
+
+        }
+
+        public bool ConsultarUsuario(usuarioEN usuario)
+        {
+            SqlCommand select = new SqlCommand("Select * from Usuario where Usuario=" + "'" + usuario.Correo + "'and pass='"+usuario.Pass+"';",connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            
+            if (lector.HasRows)//si existe el usuaro no se crea
+            {
+                connection.Close();
+                return true;
+            }
+
+            connection.Close();
+            return false;
+
         }
 
         public bool ActualizarUsuario(usuarioEN usuario)
@@ -40,7 +81,7 @@ namespace AplicacionWeb
 
         public usuarioEN dameUsuario(string correo)
         {
-            usuarioEN usuario = new usuarioEN();
+            usuarioEN usuario = new usuarioEN("Email","Usuario","Apellidos","Pass");
             //Muestra usuario
 
             return usuario;
@@ -48,7 +89,7 @@ namespace AplicacionWeb
 
         public bool asistir(eventoEN evento)
         {
-            usuarioEN usuario = new usuarioEN();
+            usuarioEN usuario = new usuarioEN("Email", "Usuario", "Apellidos", "Pass");
             //Muestra usuario
 
             return true;
@@ -56,17 +97,13 @@ namespace AplicacionWeb
 
         public usuarioEN borrarAsistencia(eventoEN evento)
         {
-            usuarioEN usuario = new usuarioEN();
-            //Muestra usuario
-
+            usuarioEN usuario = new usuarioEN("Email", "Usuario", "Apellidos", "Pass");
             return usuario;
         }
 
         public usuarioEN borrarInvitacion(eventoEN evento)
         {
-            usuarioEN usuario = new usuarioEN();
-            //Muestra usuario
-
+            usuarioEN usuario = new usuarioEN("Email", "Usuario", "Apellidos", "Pass");
             return usuario;
         }
     }

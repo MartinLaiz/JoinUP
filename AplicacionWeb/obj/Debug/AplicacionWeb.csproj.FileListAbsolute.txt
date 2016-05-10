@@ -22,3 +22,35 @@ C:\Users\marti\Downloads\Rafa\JoinUP-master\AplicacionWeb\bin\BibliotecaClass.pd
 C:\Users\marti\Downloads\Rafa\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
 C:\Users\marti\Downloads\Rafa\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.dll
 C:\Users\marti\Downloads\Rafa\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\bin\AplicacionWeb.dll.config
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\bin\AplicacionWeb.dll
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\bin\AplicacionWeb.pdb
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\bin\BibliotecaClass.dll
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\bin\BibliotecaClass.pdb
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.dll
+C:\Users\Manuel\Desktop\HADA TOTAL\JoinUP-master\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.dll
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\bin\AplicacionWeb.dll.config
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\bin\AplicacionWeb.dll
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\bin\AplicacionWeb.pdb
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\bin\BibliotecaClass.dll
+C:\Users\WRGuide\Desktop\FINALE\AplicacionWeb\bin\BibliotecaClass.pdb
+F:\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
+F:\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.dll
+F:\FINALE\AplicacionWeb\bin\AplicacionWeb.dll.config
+F:\FINALE\AplicacionWeb\bin\AplicacionWeb.dll
+F:\FINALE\AplicacionWeb\bin\AplicacionWeb.pdb
+F:\FINALE\AplicacionWeb\bin\BibliotecaClass.dll
+F:\FINALE\AplicacionWeb\bin\BibliotecaClass.pdb
+F:\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.pdb
+G:\FINALE\AplicacionWeb\bin\AplicacionWeb.dll.config
+G:\FINALE\AplicacionWeb\bin\AplicacionWeb.dll
+G:\FINALE\AplicacionWeb\bin\AplicacionWeb.pdb
+G:\FINALE\AplicacionWeb\bin\BibliotecaClass.dll
+G:\FINALE\AplicacionWeb\bin\BibliotecaClass.pdb
+G:\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.csprojResolveAssemblyReference.cache
+G:\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.dll
+G:\FINALE\AplicacionWeb\obj\Debug\AplicacionWeb.pdb

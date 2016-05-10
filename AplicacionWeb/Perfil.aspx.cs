@@ -20,9 +20,9 @@ namespace AplicacionWeb
             {
                 if (!Page.IsPostBack)
                 {
-                    comentarioCAD prueba = new comentarioCAD();
-
-                    SqlCommand select = new SqlCommand("Select * from Usuario where Usuario=" + "'" + value + "'", test);
+ 
+                     
+                   /* SqlCommand select = new SqlCommand("Select * from Usuario where Usuario=" + "'" + value + "'", test);
                     test.Open();
                     SqlDataReader lector = select.ExecuteReader();
 
@@ -44,16 +44,17 @@ namespace AplicacionWeb
 
                         genero.SelectedValue = (String)lector["Genero"];
 
-                        Prueba.Visible = false;
+                       /*Prueba.Visible = false;*/
                     }
-                    else
+                    /*else
                     {
-                        contenedor_principal.Visible = false;
-                        eventos_usuario.Visible = false;
-                        pass.Visible = true;
-                    }
+                        //contenedor_principal.Visible = false;
+                        //eventos_usuario.Visible = false;
+                        //pass.Visible = true;
+                    }*/
 
-                }
+                
+            
             }
         }
 

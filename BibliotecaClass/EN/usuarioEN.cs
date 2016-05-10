@@ -10,10 +10,34 @@ namespace AplicacionWeb
         private string correo;
         private string nombre;
         private string apellidos;
-        private int edad;
+        private string edad;
         private string biografia;
         private string imagen;
-        private char genero;
+        private int genero;
+        private string pass;
+        public usuarioEN(string usuario, string nombre, string apellidos, string contrasena)
+        {
+            this.correo = usuario;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.edad = "01-01-0001";
+            this.biografia = "Aun no he especificado mi biografia";
+            this.imagen = "default";
+            this.genero = 1;
+            this.pass = contrasena;
+            
+       }
+
+        public usuarioEN()
+        {
+            // TODO: Complete member initialization
+        }
+
+        public string Pass
+        {
+            get { return pass; }
+            set { pass = value; }
+        }
 
         public string Correo
         {
@@ -33,7 +57,7 @@ namespace AplicacionWeb
             set { apellidos = value; }
         }
 
-        public int Edad
+        public string Edad
         {
             get { return edad; }
             set { edad = value; }
@@ -51,7 +75,7 @@ namespace AplicacionWeb
             set { imagen = value; }
         }
 
-        public char Genero
+        public int Genero
         {
             get { return genero; }
             set { genero = value; }
