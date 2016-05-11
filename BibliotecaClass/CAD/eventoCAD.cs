@@ -110,15 +110,15 @@ namespace AplicacionWeb
             string cons = "select * from Evento where Fecha >= '" + DateTime.Now.ToString("dd/MM/yyyy") + "'";
             if (nombre != null)
             {
-                cons += " and Nombre = '" + nombre + "'";
+                cons += " and Nombre like '%" + nombre + "%'";
             }
             if (catego != null)
             {
-                cons += " and Categoria = '" + catego + "'";
+                cons += " and Categoria like '%" + catego + "%'";
             }
             if (ciudad != null)
             {
-                cons += " and Ciudad = '" + ciudad + "'";
+                cons += " and Ciudad like '%" + ciudad + "%'";
             }
             SqlDataAdapter da = new SqlDataAdapter(cons, connection);
             da.Fill(ds, "Evento");

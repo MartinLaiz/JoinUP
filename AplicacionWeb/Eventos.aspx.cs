@@ -33,5 +33,33 @@ namespace AplicacionWeb
                 }
             }
         }
+
+        protected void cargar_eventos(object sender, EventArgs e)
+        {
+            string dest = "./Eventos.aspx?";
+            if (buscaNombre.Text != "")
+            {
+                dest += "nom=" + buscaNombre.Text;
+                if (buscaCiudad.Text != "" || buscaCategoria.Text != "")
+                {
+                    dest += "&";
+                }
+            }
+
+            if (buscaCiudad.Text != "")
+            {
+                dest += "ciu=" + buscaCiudad.Text;
+                if (buscaCategoria.Text != "")
+                {
+                    dest += "&";
+                }
+            }
+
+            if (buscaCategoria.Text != "")
+            {
+                dest += "cat=" + buscaCategoria.Text;
+            }
+            Response.Redirect(dest);
+        }
     }
 }

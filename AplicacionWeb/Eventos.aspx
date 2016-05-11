@@ -5,15 +5,15 @@
     <form runat="server">
         <div class="container" runat="server" style="background-color:#f1f1f1">
             <label class="control-label" style="padding-top:100px; font-size:35pt">Eventos</label>
-            <div style="margin-top : 20px;margin-bottom:20px">
+            <div runat="server" style="margin-top : 20px;margin-bottom:20px">
                 <label class="control-label">Nombre del evento:</label>
                 <asp:TextBox runat="server" CssClass="form-control" id="buscaNombre" Width="400px" ></asp:TextBox>
                 <label class="control-label" style="margin-top : 15px">Ciudad:</label>
                 <asp:TextBox runat="server" CssClass="form-control" id="buscaCiudad" Width="400px"></asp:TextBox>
                 <label class="control-label" style="margin-top : 15px">Categoria:</label>
                 <asp:TextBox runat="server" CssClass="form-control" id="buscaCategoria" Width="400px"></asp:TextBox>
-                <div style="margin-top : 15px">
-                    <asp:Button runat="server" CssClass="btn btn-primary" Text="Buscar!" id="buscar"/>
+                <div runat="server" style="margin-top : 15px">
+                    <asp:Button runat="server" CssClass="btn btn-primary" Text="Buscar!" id="buscar" OnClick="cargar_eventos"/>
                 </div>
             </div>
             
