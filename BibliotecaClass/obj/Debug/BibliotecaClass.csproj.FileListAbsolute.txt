@@ -13,3 +13,8 @@ G:\FINALE\BibliotecaClass\bin\Debug\BibliotecaClass.pdb
 G:\FINALE\BibliotecaClass\obj\Debug\BibliotecaClass.csprojResolveAssemblyReference.cache
 G:\FINALE\BibliotecaClass\obj\Debug\BibliotecaClass.dll
 G:\FINALE\BibliotecaClass\obj\Debug\BibliotecaClass.pdb
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\bin\Debug\BibliotecaClass.dll
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\bin\Debug\BibliotecaClass.pdb
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\obj\Debug\BibliotecaClass.csprojResolveAssemblyReference.cache
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\obj\Debug\BibliotecaClass.dll
+C:\Users\marti\Documents\Mega\Universidad\Segundo\Segundo Cuatrimestre\HADA\Practica\Grupo\JoinUP\BibliotecaClass\obj\Debug\BibliotecaClass.pdb

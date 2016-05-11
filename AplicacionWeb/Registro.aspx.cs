@@ -16,10 +16,17 @@ namespace AplicacionWeb
 
         protected void registro_usuario_Click(object sender, EventArgs e)
         {
-            usuarioEN registro = new usuarioEN(email_Usuario.Text,nombre_Usuario.Text,apellidos_Usuario.Text,pass1_Usuario.Text);
-            usuarioCAD consulta = new usuarioCAD();
-            bool estado = consulta.CrearUsuario(registro);
-            email_Usuario.Text = estado.ToString();
+            try
+            {
+                usuarioEN registro = new usuarioEN(email_Usuario.Text, nombre_Usuario.Text, apellidos_Usuario.Text, pass1_Usuario.Text);
+                usuarioCAD consulta = new usuarioCAD();
+                bool estado = consulta.CrearUsuario(registro);
+                email_Usuario.Text = estado.ToString();
+            }
+            catch (Exception ex)
+            {
+                nombre_Usuario.Text = ex.Message;
+            }
         }
 
       

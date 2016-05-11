@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -8,10 +9,10 @@ namespace AplicacionWeb
 {
     public class eventoCAD
     {
-        private string conexion;
-
-        public eventoCAD(){
-            //Adquiere la cadena de conexión desde un único sitio
+         SqlConnection connection;
+         public eventoCAD()
+         {
+            connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["db"].ConnectionString);
         }
 
         public bool anadirvento(eventoEN evento)
@@ -102,5 +103,26 @@ namespace AplicacionWeb
             return dsUsuarios;
         }
 
+        internal DataSet listarEventos(string nombre, string ciudad, string catego)
+        {
+            DataSet ds = new DataSet();
+
+            string cons = "select * from Evento where Fecha >= '" + DateTime.Now.ToString("dd/MM/yyyy") + "'";
+            if (nombre != null)
+            {
+                cons += " and Nombre = '" + nombre + "'";
+            }
+            if (catego != null)
+            {
+                cons += " and Categoria = '" + catego + "'";
+            }
+            if (ciudad != null)
+            {
+                cons += " and Ciudad = '" + ciudad + "'";
+            }
+            SqlDataAdapter da = new SqlDataAdapter(cons, connection);
+            da.Fill(ds, "Evento");
+            return ds;
+        }
     }
 }

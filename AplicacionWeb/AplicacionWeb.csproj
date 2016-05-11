@@ -66,6 +66,7 @@
     <Content Include="Amigos.aspx" />
     <Content Include="Evento.aspx" />
     <Content Include="Crear.aspx" />
+    <Content Include="Eventos.aspx" />
     <Content Include="Images\ce_fondo.jpg" />
     <Content Include="Images\fondo1.jpg" />
     <Content Include="Images\fondo2.jpg" />
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="Crear.aspx.designer.cs">
       <DependentUpon>Crear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos.aspx.cs">
+      <DependentUpon>Eventos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eventos.aspx.designer.cs">
+      <DependentUpon>Eventos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mapa.aspx.cs">
       <DependentUpon>Mapa.aspx</DependentUpon>

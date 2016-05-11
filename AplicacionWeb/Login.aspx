@@ -15,7 +15,7 @@
                     <br />
 
                     <label style="color:grey" class="control-label">Contraseña:</label>
-                    <asp:TextBox style="width:100%;color:grey" runat="server" id="Contraseña" CssClass="form-control"></asp:TextBox> 
+                    <asp:TextBox style="width:100%;color:grey" runat="server" TextMode="Password" id="Contraseña" CssClass="form-control"></asp:TextBox> 
                     <br />
                     <div class="pull-right">
                         <asp:Button runat="server" style="margin-right:1%" CssClass="btn btn-primary" ID="registro_usuario" Text="Confirmar" OnClick="registro_usuario_Click" />

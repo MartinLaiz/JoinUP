@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -37,5 +38,10 @@ namespace AplicacionWeb
         }
 
 
+        public DataSet listarEventos(string nombre, string ciudad, string catego)
+        {
+            eventoCAD even = new eventoCAD();
+            return even.listarEventos(nombre,ciudad,catego);
+        }
     }
 }
