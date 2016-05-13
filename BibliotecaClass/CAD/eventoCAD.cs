@@ -103,25 +103,37 @@ namespace AplicacionWeb
             return dsUsuarios;
         }
 
-        internal DataSet listarEventos(string nombre, string ciudad, string catego)
+        internal DataSet listarEventos(string nombre, string ciudad, string catego, string fecha)
         {
             DataSet ds = new DataSet();
 
-            string cons = "select * from Evento where Fecha >= '" + DateTime.Now.ToString("dd/MM/yyyy") + "'";
+            string cons1 = "select * from Evento e, Categorias c where e.Categoria = c.Id and e.Fecha";
+            if (fecha == null)
+            {
+                cons1 += " >='" + DateTime.Now.ToString("dd/MM/yyyy") + "'";
+            }
+            else
+            {
+                cons1 +=" = '" + fecha + "'";
+            }
+
             if (nombre != null)
             {
-                cons += " and Nombre like '%" + nombre + "%'";
+                cons1 += " and e.Nombre like '%" + nombre + "%'";
             }
+
             if (catego != null)
             {
-                cons += " and Categoria like '%" + catego + "%'";
+                cons1 += " and NomCategoria like '%" + catego + "%' ";
             }
+
             if (ciudad != null)
             {
-                cons += " and Ciudad like '%" + ciudad + "%'";
+                cons1 += " and e.Ciudad like '%" + ciudad + "%'";
             }
-            SqlDataAdapter da = new SqlDataAdapter(cons, connection);
-            da.Fill(ds, "Evento");
+
+            SqlDataAdapter da = new SqlDataAdapter(cons1, connection);
+            da.Fill(ds);
             return ds;
         }
     }

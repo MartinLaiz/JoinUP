@@ -13,6 +13,15 @@ namespace AplicacionWeb {
     public partial class Formulario_web17 {
         
         /// <summary>
+        /// Control form1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
         /// Control buscaNombre.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,33 @@ namespace AplicacionWeb {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox buscaCategoria;
+        
+        /// <summary>
+        /// Control buscaDia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox buscaDia;
+        
+        /// <summary>
+        /// Control buscaMes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox buscaMes;
+        
+        /// <summary>
+        /// Control buscaAnio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox buscaAnio;
         
         /// <summary>
         /// Control buscar.
@@ -74,5 +110,14 @@ namespace AplicacionWeb {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl error;
+        
+        /// <summary>
+        /// Control sinResult.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sinResult;
     }
 }

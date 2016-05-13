@@ -38,10 +38,10 @@ namespace AplicacionWeb
         }
 
 
-        public DataSet listarEventos(string nombre, string ciudad, string catego)
+        public DataSet listarEventos(string nombre, string ciudad, string catego, string fecha)
         {
             eventoCAD even = new eventoCAD();
-            return even.listarEventos(nombre,ciudad,catego);
+            return even.listarEventos(nombre,ciudad,catego,fecha);
         }
     }
 }
