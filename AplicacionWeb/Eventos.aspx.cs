@@ -39,17 +39,23 @@ namespace AplicacionWeb
                     DataSet d = new DataSet();
                     eventoEN ev = new eventoEN();
                     d = ev.listarEventos(nombre,ciudad,catego,fecha);
-                    buscaCiudad.Text = d.Tables.Count.ToString();
-                    sinResult.Visible = true;
-                    //eventos_si.Visible = false;
                     eventosSelecc.DataSource = d;
                     eventosSelecc.DataBind();
+                    if (eventosSelecc.Rows.Count <= 0)
+                    {
+                        sinResult.Visible = true;
+                        eventos_si.Visible = false;
+                    }
                     
                     
                 }
             }
         }
 
+        protected void itemSeleccionado(object sender, EventArgs e)
+        { 
+            
+        }
         protected void cargar_eventos(object sender, EventArgs e)
         {
             string dest = "./Eventos.aspx?";

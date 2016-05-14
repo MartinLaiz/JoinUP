@@ -13,5 +13,53 @@ namespace AplicacionWeb
         {
 
         }
+        protected void cargar_eventos(object sender, EventArgs e)
+        {
+                string dest = "./Eventos.aspx?";
+                if (buscaNombre.Text != "")
+                {
+                    dest += "nom=" + buscaNombre.Text;
+       
+                }
+                if (buscaCiudad.Text != "")
+                {
+                
+                    dest += "&" + "ciu=" + buscaCiudad.Text;
+            
+                }
+
+                if (buscaDia.Text != "" && buscaMes.Text != "" && buscaAnio.Text != "")
+                {
+                    dest += "dia=" + buscaDia.Text + "&mes=" + buscaMes.Text + "&anio=" + buscaAnio.Text;
+                }
+                buscaCiudad.Text = "True";
+                Response.Redirect(dest);
+            }
+
+        
+            protected void cargarEventos(object sender, CommandEventArgs e)
+            {
+                string dest = "./Eventos.aspx?";
+
+                dest += "cat=" + e.CommandArgument.ToString();
+                if (buscaNombre.Text != "")
+                {
+                    dest += "&nom=" + buscaNombre.Text;
+       
+                }
+
+                if (buscaCiudad.Text != "")
+                {
+                    dest += "&ciu=" + buscaCiudad.Text;
+            
+                }
+
+                if (buscaDia.Text != "" && buscaMes.Text != "" && buscaAnio.Text != "")
+                {
+                    dest += "&dia=" + buscaDia.Text + "&mes=" + buscaMes.Text + "&anio=" + buscaAnio.Text;
+                }
+                buscaCiudad.Text = "True";
+                Response.Redirect(dest);
+            }
     }
 }

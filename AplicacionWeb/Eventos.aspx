@@ -29,7 +29,7 @@
                     <asp:TextBox runat="server" CssClass="form-control" id="buscaAnio" TextMode="Number" Width="80px"></asp:TextBox>
                 </div>
                 <div runat="server" style="margin-top : 40px">
-                    <asp:Button runat="server" CssClass="btn btn-primary" Text="Buscar!" id="buscar" OnClick="cargar_eventos"/>
+                    <asp:Button runat="server" CssClass="btn btn-primary" Text="Buscar" id="buscar" OnClick="cargar_eventos"/>
                 </div>
                 <div style="float:left; margin-top:10px; margin-bottom:10px">
                     <asp:RangeValidator ControlToValidate="buscaDia" runat="server" Type="Integer" ErrorMessage="Dia incorrecto" MinimumValue="01" MaximumValue="31"></asp:RangeValidator>
@@ -45,8 +45,17 @@
             </div>
             
             <div id="eventos_si" runat="server" style="margin-bottom:20px">
-                <asp:GridView runat="server" ID="eventosSelecc" AutoGenerateColumns="False" AutoGenerateSelectButton="true" >
-                    <Columns>
+                <asp:GridView runat="server" ID="eventosSelecc" AutoGenerateColumns="False" AutoGenerateSelectButton="true" CssClass="table table-bordered" >
+                    <HeaderStyle BackColor="#337ab7" Font-Bold="True" ForeColor="White" />
+                    <EditRowStyle BackColor="#ffffcc" />
+                    <EmptyDataRowStyle forecolor="Red" CssClass="table table-bordered" />
+                    
+                    <Columns> 
+                        <asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="70px">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="imagen" runat="server" Width="200px"  />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:BoundField DataField="Foto_evento" HeaderText="Foto del evento"   />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre del evento"   />
                         <asp:BoundField DataField="Descripcion" HeaderText="Descripcion"   />

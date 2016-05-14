@@ -13,5 +13,9 @@ namespace AplicacionWeb
         {
 
         }
+        protected void crear_evento(object sender, EventArgs e)
+        {
+
+        }
     }
 }
