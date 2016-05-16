@@ -66,12 +66,58 @@ namespace AplicacionWeb
 
         }
 
-        public bool ActualizarUsuario(usuarioEN usuario)
+        public bool ActualizarFotoUsuario(usuarioEN usuario)
         {
-            bool ok = false;
-            //Actualiza usuario
+            SqlCommand update = new SqlCommand("update Usuario set Foto_perfil = '" + usuario.Imagen + "' where Usuario = '" + usuario.Correo + "';", connection);
+            connection.Open();
+            int ret = update.ExecuteNonQuery();
 
-            return ok;
+            if (ret > 0 )//si existe el usuaro no se crea
+            {
+                connection.Close();
+                return true;
+            }
+
+            connection.Close();
+            return false;
+        }
+
+        public bool ActualizarPassUsuario(usuarioEN usuario)
+        {
+            SqlCommand update = new SqlCommand("update Usuario set pass = '" + usuario.Pass + "' where Usuario = '" + usuario.Correo + "';", connection);
+            connection.Open();
+            int ret = update.ExecuteNonQuery();
+
+            if (ret > 0)//si existe el usuaro no se crea
+            {
+                connection.Close();
+                return true;
+            }
+
+            connection.Close();
+            return false;
+        }
+
+        public bool ActualizarUsuario(usuarioEN usuario_update)
+        {
+            SqlCommand update = new SqlCommand("update Usuario set Nombre = '" + usuario_update.Nombre
+                + "', Apellidos='" + usuario_update.Apellidos
+                + "', Biografia='" + usuario_update.Biografia
+                + "', Genero='" + usuario_update.Genero
+                + "', nacimiento='" + usuario_update.Edad
+                + "' where Usuario = '" + usuario_update.Correo + "';", connection);
+
+            connection.Open();
+            int ret = update.ExecuteNonQuery();
+
+            if (ret > 0)//si existe el usuaro no se crea
+            {
+                connection.Close();
+                return true;
+            }
+
+            connection.Close();
+            return false;
         }
 
         public bool BorrarUsuario(usuarioEN usuario)
@@ -96,11 +142,12 @@ namespace AplicacionWeb
                         //Sesion Activa = Boton                           
 
                         //Cargo Datos
-                        usuario = new usuarioEN((String)lector["Usuario"],(String)lector["Nombre"],(String)lector["Apellidos"],(String)lector["pass"]);
+                        usuario = new usuarioEN((String)lector["Usuario"],(String)lector["Nombre"],(String)lector["Apellidos"],"");
                         usuario.Biografia = (String)lector["Biografia"];
                         usuario.Edad = (String)lector["nacimiento"];
                         usuario.Genero = (String)lector["Genero"];
                         usuario.Imagen = (String)lector["Foto_perfil"];
+                        connection.Close();
 
                     }
            

@@ -115,12 +115,5 @@ namespace AplicacionWeb
             eventoCAD aux = new eventoCAD();
             return aux.dameCat(categoria);
         }
-
-
-        public void anadirCreador(string usuario)
-        {
-            eventoCAD aux = new eventoCAD();
-            aux.anadirCreador(Id,usuario);
-        }
     }
 }

@@ -16,6 +16,20 @@ namespace AplicacionWeb
         private string genero;
         private string pass;
 
+
+        public usuarioEN(string username)
+        {
+            this.correo = username;
+            this.nombre = "";
+            this.apellidos = "";
+            this.edad = "";
+            this.biografia = "";
+            this.imagen = "";
+            this.genero = "";
+            this.pass = "";
+
+        }
+
         public usuarioEN(string usuario, string nombre, string apellidos, string contrasena)
         {
             this.correo = usuario;
