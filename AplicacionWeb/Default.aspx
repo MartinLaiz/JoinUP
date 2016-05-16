@@ -14,7 +14,7 @@
 
           </div>  <!--Fin: Imagen de globitos-->
 
-         <div id="Filtro" style="align-self: center">  <!--BUSCADOR-->
+         <div id="Filtro">  <!--BUSCADOR-->
                 <asp:Label ID="Label3" runat="server" Text="Nombre del Evento:" ForeColor="White"></asp:Label>
                     <asp:TextBox ID="buscaNombre" runat="server" CssClass="form-control" TextMode="Search" Width="300px" Font-Size="Medium"></asp:TextBox>
              <br />  <br /> 

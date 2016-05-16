@@ -56,14 +56,22 @@ namespace AplicacionWeb
         {
             bool ok = false;
             string cons = "Insert into Evento values ('" + evento.Nombre + "','" + evento.Descripcion + "','" + evento.Categoria + "','" + evento.Foto_evento + "','" + evento.Fecha + "','" + evento.Ciudad + "');";
+            string cons2 = "select Id from Evento where Nombre='" + evento.Nombre + "' and Descripcion='" + evento.Descripcion + "'and Foto_evento='" + evento.Foto_evento + "'and Fecha='" + evento.Fecha + "'";
             SqlCommand insert = new SqlCommand(cons, connection);
             connection.Open();
             int ret = insert.ExecuteNonQuery();//ejecutar la insert
 
-
             if (ret > 0)//sihay aceptada se interta
             {
                 ok = true;
+            }
+            SqlCommand select = new SqlCommand(cons2, connection);
+            SqlDataReader lector = select.ExecuteReader();
+
+            if (lector.HasRows)
+            {
+                lector.Close();
+                evento.Id = Convert.ToInt32(select.ExecuteScalar());
 
             }
             connection.Close();
@@ -99,7 +107,6 @@ namespace AplicacionWeb
             if (lector.HasRows)
             {
                 lector.Close();
-                aux = Convert.ToString(select.ExecuteScalar());
                 connection.Close();
             }
             return aux;
@@ -116,8 +123,8 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToString(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
             return aux;
         }
 
@@ -132,8 +139,8 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToString(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
             return aux;
         }
 
@@ -148,8 +155,8 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToInt32(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
        
             return aux;
         }
@@ -166,8 +173,8 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToInt32(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
 
             return aux;
         }
@@ -182,8 +189,8 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToString(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
 
             return aux;
         }
@@ -198,8 +205,8 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToInt32(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
 
             return aux;
         }
@@ -214,10 +221,26 @@ namespace AplicacionWeb
             {
                 lector.Close();
                 aux = Convert.ToString(select.ExecuteScalar());
-                connection.Close();
             }
+            connection.Close();
 
             return aux;
+        }
+
+        internal object anadirCreador(int Id, string usuario)
+        {
+            bool ok = false;
+            string cons = "Insert into Crear values ('" + usuario + "','" + Id + "');";
+            SqlCommand insert = new SqlCommand(cons, connection);
+            connection.Open();
+            int ret = insert.ExecuteNonQuery();//ejecutar la insert
+
+            if (ret > 0)//sihay aceptada se interta
+            {
+                ok = true;
+            }
+            connection.Close();
+            return ok;
         }
     }
 }

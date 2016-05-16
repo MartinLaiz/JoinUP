@@ -24,13 +24,13 @@ namespace AplicacionWeb
             if (buscaCiudad.Text != "")
             {
 
-                dest += "&" + "ciu=" + buscaCiudad.Text;
+                dest += "&ciu=" + buscaCiudad.Text;
 
             }
 
             if (buscaDia.Text != "" && buscaMes.Text != "" && buscaAnio.Text != "")
             {
-                dest += "dia=" + buscaDia.Text + "&mes=" + buscaMes.Text + "&anio=" + buscaAnio.Text;
+                dest += "&dia=" + buscaDia.Text + "&mes=" + buscaMes.Text + "&anio=" + buscaAnio.Text;
             }
             buscaCiudad.Text = "True";
             Response.Redirect(dest);

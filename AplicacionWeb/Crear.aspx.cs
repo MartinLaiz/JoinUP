@@ -34,6 +34,8 @@ namespace AplicacionWeb
             bool estado = evento.anadirevento();
             if (estado)
             {
+                string creador = Session["username"].ToString();
+                evento.anadirCreador(creador);
                 id = evento.Id;
                 Response.Redirect("Evento.aspx?id=" + id);
             }
