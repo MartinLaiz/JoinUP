@@ -14,7 +14,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-    <body style="background-image:url(Images/fondo4.jpg);background-size:cover">
+<body style="background-image:url(Images/fondo4.jpg);background-size:cover">
  
        <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container" style="vertical-align:middle">
@@ -25,9 +25,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="Amigos.aspx">Amigos</a></li>
-                        <li><a href="Mapa.aspx">Mapa</a></li>
-                        <li><a href="Perfil.aspx">Perfil</a></li>
+                        <li><a href="Buscador.aspx">Buscador</a></li>
                         <li class="divider"></li>
                         <li><a runat="server" id="registro_corto"  href="Registro.aspx">Registrarse</a></li>
                         <li><a runat="server" id="logeo_corto" href="Login.aspx">Iniciar Sesión</a></li>
@@ -40,9 +38,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         
-                        <li><a runat="server" href="Amigos.aspx">Amigos</a></li>
-                        <li><a runat="server" href="Mapa.aspx">Mapa</a></li>
-                        <li><a runat="server" href="Perfil.aspx">Perfil</a></li>
+                        <li><a runat="server" href="Buscador.aspx">Buscador</a></li>
+                        
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
