@@ -13,6 +13,34 @@ namespace AplicacionWeb
         private string usuario;
         private int evento;
 
+        public comentarioEN()
+        {
+
+
+        }
+
+        public comentarioEN(string nombre, string comentario, int evento)
+        {
+            this.identificador = 1;
+            this.comentario = comentario;
+            this.usuario = nombre;
+            this.evento = evento;
+        }
+
+        public void BorrarComentarioEn(comentarioEN com)
+        {
+            comentarioCAD aux = new comentarioCAD();
+            bool ok = false;
+            ok = aux.BorrarComentario(com);
+        }
+
+        public void CrearComentarioEn()
+        {
+            comentarioCAD aux = new comentarioCAD();
+            bool ok = false;
+            ok = aux.CrearComentario(this);
+        }
+
         public string Comentario
         {
             get { return comentario; }

@@ -13,8 +13,9 @@ namespace AplicacionWeb
         private string edad;
         private string biografia;
         private string imagen;
-        private int genero;
+        private string genero;
         private string pass;
+
         public usuarioEN(string usuario, string nombre, string apellidos, string contrasena)
         {
             this.correo = usuario;
@@ -22,8 +23,8 @@ namespace AplicacionWeb
             this.apellidos = apellidos;
             this.edad = "01-01-0001";
             this.biografia = "Aun no he especificado mi biografia";
-            this.imagen = "default";
-            this.genero = 1;
+            this.imagen = "/Images/foto_perfil.png";
+            this.genero = "1";
             this.pass = contrasena;
             
        }
@@ -75,7 +76,7 @@ namespace AplicacionWeb
             set { imagen = value; }
         }
 
-        public int Genero
+        public string Genero
         {
             get { return genero; }
             set { genero = value; }

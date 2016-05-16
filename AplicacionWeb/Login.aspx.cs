@@ -22,7 +22,7 @@ namespace AplicacionWeb
             if (ret)
             {
                 
-                Session["login"] = Correo.Text;
+                Session["username"] = Correo.Text.ToString();
                 Response.Redirect("Perfil.aspx");
                 
             }

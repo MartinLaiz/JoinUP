@@ -10,7 +10,7 @@
 namespace AplicacionWeb {
     
     
-    public partial class Formulario_web1 {
+    public partial class Pagina_Default {
         
         /// <summary>
         /// Control Form1.

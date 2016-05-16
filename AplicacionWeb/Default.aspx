@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AplicacionWeb.Formulario_web1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AplicacionWeb.Pagina_Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -6,7 +6,7 @@
       <div id="generalDefault">
           
           <!--Imagen de globitos--> 
-         <div id= "Foto")">
+         <div id= "Foto")" style="padding-top: 60px">
               <a href="http://localhost:1247/Crear.aspx" title="Crear Evento" itemprop="url" style="width: 800px; height: 800px">
                  <img src="Images/ce_fondo.jpg" height ="300" style="border: thin solid #000000; width: 1097px;" />
                   
@@ -14,22 +14,33 @@
 
           </div>  <!--Fin: Imagen de globitos-->
 
-         <div id="Filtro">  <!--BUSCADOR-->
+         <div id="Filtro" style="align-self: center">  <!--BUSCADOR-->
                 <asp:Label ID="Label3" runat="server" Text="Nombre del Evento:" ForeColor="White"></asp:Label>
-                    <asp:TextBox ID="buscaNombre" runat="server" TextMode="Search" Font-Size="Medium"></asp:TextBox>
+                    <asp:TextBox ID="buscaNombre" runat="server" CssClass="form-control" TextMode="Search" Width="300px" Font-Size="Medium"></asp:TextBox>
              <br />  <br /> 
-             <asp:Label ID="Label1" runat="server" Text="Dia:" ForeColor="White"></asp:Label>
-                 <asp:TextBox ID="buscaDia" runat="server" TextMode="Number" Width="80px"></asp:TextBox>
-             &nbsp;&nbsp;
-             <asp:Label ID="Label5" runat="server" Text="Mes:" ForeColor="White"></asp:Label>
-                 <asp:TextBox ID="buscaMes" runat="server" TextMode="Number" Width="80px"></asp:TextBox> 
-             &nbsp;&nbsp;
-             <asp:Label ID="Label21" runat="server" Text="Año:" ForeColor="White"></asp:Label>
-                 <asp:TextBox ID="buscaAnio" runat="server" TextMode="Number" Width="80px"></asp:TextBox>  
+             <div style="float:left">
+                 <asp:Label ID="Label1" runat="server" Text="Dia:" ForeColor="White"></asp:Label>
+                 <asp:TextBox ID="buscaDia" runat="server" CssClass="form-control" TextMode="Number" Width="80px"></asp:TextBox>
+
+             </div>
+             <div style="float:left; padding-left: 20px">
+                 <asp:Label ID="Label5" runat="server" Text="Mes:" ForeColor="White"></asp:Label>
+                 <asp:TextBox ID="buscaMes" runat="server" CssClass="form-control" TextMode="Number" Width="80px"></asp:TextBox>
+
+             </div>
+             <div style="float:left; padding-left: 20px">
+                 <asp:Label ID="Label21" runat="server" Text="Año:" ForeColor="White"></asp:Label>
+                 <asp:TextBox ID="buscaAnio" runat="server" CssClass="form-control" TextMode="Number" Width="80px"></asp:TextBox>
+
+             </div>
+            
                     
          <br />  <br /> 
-                 <asp:Label ID="Label2" runat="server" Text="Ciudad:" CssClass="right " ForeColor="White"></asp:Label>
-                     <asp:TextBox ID="buscaCiudad" runat="server" TextMode="SingleLine" ></asp:TextBox> 
+                <div style="padding-top: 30px">
+                    <asp:Label ID="Label2" runat="server" Text="Ciudad:" ForeColor="White"></asp:Label>
+                    <asp:TextBox ID="buscaCiudad" runat="server" Width="200px" CssClass="form-control" TextMode="SingleLine" ></asp:TextBox> 
+                </div>
+                 
                     <!-- <asp:DropDownList ID="DropDownList2" runat="server" Font-Size="Small" ></asp:DropDownList> -->
              
              <!--<asp:Label ID="Label20" runat="server" Text="Categoria:" CssClass="right " ForeColor="White"></asp:Label>
@@ -39,7 +50,7 @@
          <br />
 
          <div id="Boton">
-             <asp:Button ID="Buscar" runat="server" Text="Buscar" OnClick="cargar_eventos"/>
+             <asp:Button ID="Buscar" runat="server" Text="Buscar" CssClass="btn btn-primary" OnClick="cargar_eventos"/>
             </div>  <!--fIN: BUSCADOR-->  
 
           <!--Muestra Categorias-->

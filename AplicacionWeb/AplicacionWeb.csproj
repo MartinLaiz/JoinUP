@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +58,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -64,13 +69,16 @@
       <BrowseToURL>~/</BrowseToURL>
     </Content>
     <Content Include="Amigos.aspx" />
-    <Content Include="Evento.aspx" />
     <Content Include="Crear.aspx" />
-    <Content Include="Eventos.aspx" />
+    <Content Include="Evento.aspx" />
+    <Content Include="Buscador.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="Images\ce_fondo.jpg" />
     <Content Include="Images\fondo1.jpg" />
     <Content Include="Images\fondo2.jpg" />
     <Content Include="Images\fondo3.jpg" />
+    <Content Include="Images\fondo4.jpg" />
+    <Content Include="Images\foto_perfil.png" />
     <Content Include="Mapa.aspx" />
     <Content Include="Images\foto.jpg" />
     <Content Include="Perfil.aspx" />
@@ -104,7 +112,9 @@
     <Content Include="App_Data\BBDD_log.ldf">
       <DependentUpon>BBDD.mdf</DependentUpon>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web1.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -122,13 +132,6 @@
     <Compile Include="Amigos.aspx.designer.cs">
       <DependentUpon>Amigos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Evento.aspx.cs">
-      <DependentUpon>Evento.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Evento.aspx.designer.cs">
-      <DependentUpon>Evento.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Crear.aspx.cs">
       <DependentUpon>Crear.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,12 +139,26 @@
     <Compile Include="Crear.aspx.designer.cs">
       <DependentUpon>Crear.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Eventos.aspx.cs">
-      <DependentUpon>Eventos.aspx</DependentUpon>
+    <Compile Include="Evento.aspx.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Eventos.aspx.designer.cs">
-      <DependentUpon>Eventos.aspx</DependentUpon>
+    <Compile Include="Evento.aspx.designer.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buscador.aspx.cs">
+      <DependentUpon>Buscador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscador.aspx.designer.cs">
+      <DependentUpon>Buscador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mapa.aspx.cs">
       <DependentUpon>Mapa.aspx</DependentUpon>

@@ -10,7 +10,7 @@
 namespace AplicacionWeb {
     
     
-    public partial class Formulario_web17 {
+    public partial class Pagina_Buscador {
         
         /// <summary>
         /// Control form1.
@@ -100,16 +100,7 @@ namespace AplicacionWeb {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView eventosSelecc;
-        
-        /// <summary>
-        /// Control error.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl error;
+        protected global::System.Web.UI.WebControls.DataList eventosSelecc;
         
         /// <summary>
         /// Control sinResult.

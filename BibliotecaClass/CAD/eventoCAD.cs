@@ -9,99 +9,14 @@ namespace AplicacionWeb
 {
     public class eventoCAD
     {
-         SqlConnection connection;
-         public eventoCAD()
-         {
+        SqlConnection connection;
+
+
+        public eventoCAD()
+        {
             connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["db"].ConnectionString);
         }
 
-        public bool anadirvento(eventoEN evento)
-        {
-            bool ok = false;
-            //crear un evento
-
-            return ok;
-        }
-
-        public bool actualizarEvento(eventoEN evento)
-        {
-            bool ok = false;
-            //Actualiza el evento
-
-            return ok;
-        }
-
-        public bool borrarEvento(eventoEN evento)
-        {
-            bool ok = false;
-            //Borra un lugar
-
-            return ok;
-        }
-
-        public eventoEN dameEvento(int id)
-        {
-            eventoEN evento = new eventoEN();
-            //Muestra un evento
-
-            return evento;
-        }
-
-        public DataSet dameEventosCat(string categoria)
-        {
-            DataSet dsEvento = null;
-            dsEvento = new DataSet();
-            return dsEvento;
-        }
-
-        public DataSet dameEventosCiudad(string ciudad, string provincia)
-        {
-            DataSet dsEvento = null;
-            dsEvento = new DataSet();
-            return dsEvento;
-        }
-
-        public DataSet dameEventosLugar(lugarEN lugar)
-        {
-            DataSet dsEvento = null;
-            dsEvento = new DataSet();
-            return dsEvento;
-        }
-
-        public DataSet dameEventosFecha(DateTime fecha)
-        {
-            DataSet dsEvento = null;
-            dsEvento = new DataSet();
-            return dsEvento;
-        }
-
-        public bool invitar(usuarioEN usuario)
-        {
-            bool invitado = false;
-
-            return invitado;
-        }
-
-        public bool eliminarInvitacion(usuarioEN usuario)
-        {
-            bool eliminado = false;
-
-            return eliminado;
-        }
-
-        public bool asiste(usuarioEN usuario)
-        {
-            bool asiste = false;
-
-            return asiste;
-        }
-
-        public DataSet asistentes(usuarioEN usuario)
-        {
-            DataSet dsUsuarios = null;
-            dsUsuarios = new DataSet();
-            return dsUsuarios;
-        }
 
         internal DataSet listarEventos(string nombre, string ciudad, string catego, string fecha)
         {
@@ -114,27 +29,195 @@ namespace AplicacionWeb
             }
             else
             {
-                cons1 +=" = '" + fecha + "'";
+                cons1 += " = '" + fecha + "'";
             }
 
             if (nombre != null)
             {
-                cons1 += " and e.Nombre like '%" + nombre + "%'";
+                cons1 += " and e.Nombre like '" + nombre + "%'";
             }
 
             if (catego != null)
             {
-                cons1 += " and NomCategoria like '%" + catego + "%' ";
+                cons1 += " and NomCategoria = '" + catego + "' ";
             }
 
             if (ciudad != null)
             {
-                cons1 += " and e.Ciudad like '%" + ciudad + "%'";
+                cons1 += " and e.Ciudad = '" + ciudad + "'";
             }
 
             SqlDataAdapter da = new SqlDataAdapter(cons1, connection);
             da.Fill(ds);
             return ds;
+        }
+
+        public bool anadirevento(eventoEN evento)
+        {
+            bool ok = false;
+            string cons = "Insert into Evento values ('" + evento.Nombre + "','" + evento.Descripcion + "','" + evento.Categoria + "','" + evento.Foto_evento + "','" + evento.Fecha + "','" + evento.Ciudad + "');";
+            SqlCommand insert = new SqlCommand(cons, connection);
+            connection.Open();
+            int ret = insert.ExecuteNonQuery();//ejecutar la insert
+
+
+            if (ret > 0)//sihay aceptada se interta
+            {
+                ok = true;
+
+            }
+            connection.Close();
+            return ok;
+        }
+
+        public eventoEN dameEvento(int id)
+        {
+            eventoEN evento = null;
+            SqlCommand select = new SqlCommand("Select * from Usuario where Usuario=" + "'" + id + "'", connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+
+            if (lector.HasRows)
+            {
+                evento = new eventoEN((String)lector["Nombre"], (String)lector["Descripcion"], (String)lector["Ciudad"], (String)lector["Foto_evento"], (String)lector["Fecha"], (string)lector["Categoria"]);
+                evento.Fecha = (String)lector["fecha"];
+                evento.Ciudad = (String)lector["Ciudad"];
+
+            }
+
+            return evento;
+        }
+
+
+        public string dameLugar(string idEvento)
+        {
+            string aux = "";
+            int id = Convert.ToInt32(idEvento);
+            SqlCommand select = new SqlCommand("Select Ciudad from Evento where Id=" + id, connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToString(select.ExecuteScalar());
+                connection.Close();
+            }
+            return aux;
+        }
+
+        public string dameDescripcion(string idEvento)
+        {
+            string aux = "";
+            int id = Convert.ToInt32(idEvento);
+            SqlCommand select = new SqlCommand("Select Descripcion from Evento where Id=" + id, connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToString(select.ExecuteScalar());
+                connection.Close();
+            }
+            return aux;
+        }
+
+
+        public string dameDescripcion(int id)
+        {
+            string aux = "";
+            SqlCommand select = new SqlCommand("Select Descripcion from Evento where Id=" + id, connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToString(select.ExecuteScalar());
+                connection.Close();
+            }
+            return aux;
+        }
+
+        public int dameID(string nombre)
+        {
+            int aux = -1;//si no existe devuelve -1
+            //select*from Evento where nombre='holamanolo';
+            SqlCommand select = new SqlCommand("Select Id from Evento where nombre=" + "'" + nombre + "'", connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToInt32(select.ExecuteScalar());
+                connection.Close();
+            }
+       
+            return aux;
+        }
+
+
+        internal int dameCat(string categoria)
+        {
+            int aux = -1;//si no existe devuelve -1
+            //select*from Evento where nombre='holamanolo';
+            SqlCommand select = new SqlCommand("Select Id from Categorias where NomCategoria=" + "'" + categoria + "'", connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToInt32(select.ExecuteScalar());
+                connection.Close();
+            }
+
+            return aux;
+        }
+
+        internal string dameNombre(int id)
+        {
+            string aux = "";
+            SqlCommand select = new SqlCommand("Select Nombre from Evento where Id=" + id, connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToString(select.ExecuteScalar());
+                connection.Close();
+            }
+
+            return aux;
+        }
+
+        internal int dameCat(int id)
+        {
+            int aux = -1;
+            SqlCommand select = new SqlCommand("Select Categoria from Evento where Id=" + id, connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToInt32(select.ExecuteScalar());
+                connection.Close();
+            }
+
+            return aux;
+        }
+
+        internal string dameFoto(int id)
+        {
+            string aux = "";
+            SqlCommand select = new SqlCommand("Select Foto_evento from Evento where Id=" + id, connection);
+            connection.Open();
+            SqlDataReader lector = select.ExecuteReader();
+            if (lector.HasRows)
+            {
+                lector.Close();
+                aux = Convert.ToString(select.ExecuteScalar());
+                connection.Close();
+            }
+
+            return aux;
         }
     }
 }

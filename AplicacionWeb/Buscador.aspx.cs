@@ -10,13 +10,13 @@ using System.Data;
 
 namespace AplicacionWeb
 {
-    public partial class Formulario_web17 : System.Web.UI.Page
+    public partial class Pagina_Buscador : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             eventos_si.Visible = false;
             sinResult.Visible = false;
-            
+
             string nombre = Request.QueryString["nom"];
             string ciudad = Request.QueryString["ciu"];
             string catego = Request.QueryString["cat"];
@@ -31,34 +31,29 @@ namespace AplicacionWeb
 
             if (nombre != null || ciudad != null || catego != null || fecha != null)
             {
-                error.Visible = false;
                 eventos_si.Visible = true;
                 if (!Page.IsPostBack)
                 {
-                    
+
                     DataSet d = new DataSet();
                     eventoEN ev = new eventoEN();
-                    d = ev.listarEventos(nombre,ciudad,catego,fecha);
+                    d = ev.listarEventos(nombre, ciudad, catego, fecha);
                     eventosSelecc.DataSource = d;
                     eventosSelecc.DataBind();
-                    if (eventosSelecc.Rows.Count <= 0)
+                    if (eventosSelecc.Items.Count <= 0)
                     {
                         sinResult.Visible = true;
                         eventos_si.Visible = false;
                     }
-                    
-                    
+
+
                 }
             }
         }
 
-        protected void itemSeleccionado(object sender, EventArgs e)
-        { 
-            
-        }
         protected void cargar_eventos(object sender, EventArgs e)
         {
-            string dest = "./Eventos.aspx?";
+            string dest = "./Buscador.aspx?";
             if (buscaNombre.Text != "")
             {
                 dest += "nom=" + buscaNombre.Text;
@@ -91,8 +86,12 @@ namespace AplicacionWeb
             {
                 dest += "dia=" + buscaDia.Text + "&mes=" + buscaMes.Text + "&anio=" + buscaAnio.Text;
             }
-            buscaCiudad.Text = "True";
             Response.Redirect(dest);
+        }
+
+        protected void irA(object sender, CommandEventArgs e)
+        {
+            buscaCiudad.Text = e.CommandArgument.ToString();
         }
     }
 }

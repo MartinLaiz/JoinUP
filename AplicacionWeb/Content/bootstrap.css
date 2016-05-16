@@ -2550,6 +2550,8 @@ output {
 }
 .form-control {
   display: block;
+  margin-left:0px;
+  margin-bottom:15px;
   width: 100%;
   height: 34px;
   padding: 6px 12px;
@@ -6764,13 +6766,17 @@ button.close {
 div#general{
     margin:auto;/*bordes*/
     margin-top:50px;
-    width:1540px;
+    width:1425px;
     height:900px;
 }
 
 
 
+
 div#containerizq{
+    margin:auto;/*bordes*/
+    margin-top:25px;
+    margin-left:15px;
     float:left;
     width:256px;
     height:800px;
@@ -6788,69 +6794,23 @@ div#imagenEven{
 div#DetallesEve{
     margin-top:25px;
     float:right;
-    border-top-style: solid;
     width:256px;
-    height:198px;
+    height:197px;
 }
-
-div#CiudadEve{
-    border-right-style: solid;
-    border-left-style: solid;
-    width:256px;
-    height:40px;
-    background-color:white;
-}
-
-div#LugarEve{
-    border-right-style: solid;
-    border-left-style: solid;
-    width:256px;
-    height:40px;
-    background-color:white;
-}
-
-div#FechaEve{
-    border-right-style: solid;
-    border-left-style: solid;
-    width:256px;
-    height:40px;
-    background-color:white;
-}
-
-div#HoraEve{
-    border-right-style: solid;
-    border-left-style: solid;
-    width:256px;
-    height:40px;
-    background-color:white;
-}
-
-div#AsistentesEve{
-
-    border-right-style: solid;
-    border-left-style: solid;
-    border-bottom-style: solid;
-    width:256px;
-    height:40px;
-    background-color:white;
-}
-
-
 
 div#botonesEve{
+    float:right;
     width:256px;
-    height:219px;
+    height:100px;
+
 }
 
-div#Asistir{
+div#botonesArriba{
     margin-top:15px;
+    float:right;
     width:256px;
-    height:40px;
-}
+    height:45px;
 
-div#NoAsistir{
-    width:256px;
-    height:40px;
 }
 
 div#Crear{
@@ -6865,34 +6825,46 @@ div#Modificar{
 
 
 div#Centro{
+    margin:auto;/*bordes*/
+    margin-top:25px;
     float:left;
-    width:800px;
+    width:700px;
     height:800px;
 }
 
 
 div#DescripcionEven{
     margin-left: 30px;
-    width:800px;
-    height:400px;
+    width:700px;
+    height:256px;
+
+}
+
+div#ComentariosEvenUsua{
+    margin-top:15px;
+    margin-left: 18px;
+    width:700px;
+    height:256px;
 }
 
 div#ComentariosEven{
     border-color: white;
     margin:auto;/*bordes*/
     margin-top:25px;
-    margin-left: 30px;
+    margin-left: 20px;
     border-color: white;
-    width:800px;
+    width:700px;
     height:400px;
     border-color: white;
 }
 
 div#Derecha{
+    margin:auto;/*bordes*/
+    margin-top:25px;
     margin-left:50px;
     float:left;
     width:400px;
-    height:400px;
+    height:256px;
 }
 
 
@@ -6964,14 +6936,78 @@ div.Columna{
     height: 900px;
 }
 
-.tablaEventos{
+imggrayscale {
 
+    -webkit-filter:grayscale(1);
+	filter:grayscale(1);
+    -webkit-transition : -webkit-filter 1s ease-out;
+	transition : -webkit-filter 1s ease-out;
+    
+       
 }
 
+imggrayscale:hover {
+       
+   -webkit-filter:grayscale(0);
+	filter:grayscale(0);
+    
+}
+
+.image  a {
+    display: none;
+}
+
+.image  a:hover {
+    display: block;
+}
 /*# sourceMappingURL=bootstrap.css.map */
 
 
+.divimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divimg .img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.divimg .text {
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  transform: translate(0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  opacity: 0;
+  transition: transfom opacity 1.5s;
+}
+.divimg:hover .img {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+.divimg:hover .text {
+  transform: translate(0px, -20px);
+  opacity: 1;
+}
 
 /*parte registro :)*/
-
-

@@ -14,7 +14,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background-image:url(Images/fondo3.jpg)">
+    <body style="background-image:url(Images/fondo4.jpg);background-size:cover">
  
        <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container" style="vertical-align:middle">
@@ -29,8 +29,10 @@
                         <li><a href="Mapa.aspx">Mapa</a></li>
                         <li><a href="Perfil.aspx">Perfil</a></li>
                         <li class="divider"></li>
-                        <li><a href="Registro.aspx">Registrarse</a></li>
-                        <li><a href="Login.aspx">Iniciar Sesión</a></li>
+                        <li><a runat="server" id="registro_corto"  href="Registro.aspx">Registrarse</a></li>
+                        <li><a runat="server" id="logeo_corto" href="Login.aspx">Iniciar Sesión</a></li>
+                        <li><a runat="server" visible="false" id="perfil_corto" href="Perfil.aspx">Mi perfil</a></li>
+                        <li><a runat="server" visible="false" id="cerrar_corto" href="Logout.aspx">Cerrar Sesión</a></li>
                     </ul>
                     <a runat="server" href="~/"> <img src="Images/logo_out_cut.png" onmouseover="this.src='Images/logo_over_cut.png'" onmouseout="this.src='Images/logo_out_cut.png'" alt="Logo" height="50" width="148" style="vertical-align:middle" /></a>
                  
@@ -38,19 +40,23 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         
-                        <li><a runat="server" href="~/Amigos.aspx">Amigos</a></li>
-                        <li><a runat="server" href="~/Mapa.aspx">Mapa</a></li>
-                        <li><a runat="server" href="~/Perfil.aspx">Perfil</a></li>
+                        <li><a runat="server" href="Amigos.aspx">Amigos</a></li>
+                        <li><a runat="server" href="Mapa.aspx">Mapa</a></li>
+                        <li><a runat="server" href="Perfil.aspx">Perfil</a></li>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="Registro.aspx"><asp:label runat="server" ID="registro" Text="Registrarse"></asp:label></a></li>
-                                <li><a href="Login.aspx"><asp:label runat="server" ID="inicio" Text="Iniciar Sesion"></asp:label></a></li>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li runat="server" id="registro"><a href="Registro.aspx"><asp:label runat="server" Text="Registrarse"></asp:label></a></li>
+                        <li runat="server" id="inicio"><a href="Login.aspx"><asp:label runat="server" Text="Iniciar Sesion"></asp:label></a></li>
+                        <li runat="server" visible="false" id="menu_largo" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">   <asp:label runat="server" CssClass="dropdown-toggle" ID="perfil_largo" Text="Perfil" ></asp:label>     <b class="caret"></b></a>
+                            <ul  class="dropdown-menu">
+                                <li><a href="Perfil.aspx">Mi Perfil</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Logout.aspx">Cerrar Sesión</a></li>
                             </ul>
-                        </AnonymousTemplate>
-                        
-                    </asp:LoginView>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

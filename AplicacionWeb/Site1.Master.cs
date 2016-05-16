@@ -11,11 +11,27 @@ namespace AplicacionWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["login"] != null)
+            if (!Page.IsPostBack)
             {
-                registro.Text = Session["login"].ToString();
-                inicio.Visible = false;
+                if (Session["username"] != null)
+                {
+                    
+                    perfil_largo.Text = Session["username"].ToString();
+                    
+                    //perfil.Visible = true;
+                    registro.Visible = false;
+                    inicio.Visible = false;
+                    menu_largo.Visible = true;
+                    registro_corto.Visible = false;
+                    logeo_corto.Visible = false;
+                    perfil_corto.Visible = true;
+                    cerrar_corto.Visible = true;
+
+
+
+                }
             }
+            
         }
     }
 }

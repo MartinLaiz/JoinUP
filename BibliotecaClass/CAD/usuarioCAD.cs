@@ -10,6 +10,7 @@ namespace AplicacionWeb
     {
 
         SqlConnection connection;
+
         public usuarioCAD(){
 
             connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["db"].ConnectionString);
@@ -24,11 +25,13 @@ namespace AplicacionWeb
             
             if (lector.HasRows)//si existe el usuaro no se crea
             {
+                lector.Close();
                 connection.Close();
                 return false;
             }
             else
             {
+                lector.Close();
                 connection.Close();
                 SqlCommand insert = new SqlCommand("Insert into Usuario values ('" + usuario.Correo +"','" + usuario.Nombre + "','"+usuario.Apellidos+"','"+ usuario.Biografia +"','" + usuario.Imagen + "','" + usuario.Genero +"','" + usuario.Edad + "','" + usuario.Pass + "');",connection);
                 connection.Open();
@@ -79,11 +82,29 @@ namespace AplicacionWeb
             return ok;
         }
 
-        public usuarioEN dameUsuario(string correo)
+        public usuarioEN ObtenerUsuario(string correo)
         {
-            usuarioEN usuario = new usuarioEN("Email","Usuario","Apellidos","Pass");
-            //Muestra usuario
+                    usuarioEN usuario = null;
+                    SqlCommand select = new SqlCommand("Select * from Usuario where Usuario=" + "'" + correo + "'", connection);
+                    connection.Open();
+                    SqlDataReader lector = select.ExecuteReader();
 
+                    if (lector.HasRows)
+                    {
+                        //Leo
+                        lector.Read();
+                        //Sesion Activa = Boton                           
+
+                        //Cargo Datos
+                        usuario = new usuarioEN((String)lector["Usuario"],(String)lector["Nombre"],(String)lector["Apellidos"],(String)lector["pass"]);
+                        usuario.Biografia = (String)lector["Biografia"];
+                        usuario.Edad = (String)lector["nacimiento"];
+                        usuario.Genero = (String)lector["Genero"];
+                        usuario.Imagen = (String)lector["Foto_perfil"];
+
+                    }
+           
+            //Muestra usuario
             return usuario;
         }
 
