@@ -3,7 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <form id="Form1" method="post" runat="server">
-    <div class="panel panel-default" style="margin-top:150px;margin-left:30%;margin-right:30%;min-width:500px">
+
+    <div id="Div_Error" visible="false" runat="server" style="margin-top:100px;width:50%" class="alert alert-danger container text-center" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        <strong>Error!: </strong>
+        <asp:label id="Mensaje" runat="server" text="Mensaje"></asp:label>
+    </div>
+
+
+    <div class="panel panel-default" style="margin-top:100px;margin-left:30%;margin-right:30%;min-width:500px">
         <div class="panel-body">
             <div id="superior_panel" >
                 <h2 class="text-center" style="width:100%;margin-top: 0;"><small>Registro</small></h2>
@@ -30,7 +39,7 @@
                 </div>
                 <br />
                
-                <input id="terminos" type="checkbox"/>
+                <input runat="server" id="terminos" type="checkbox"/>
                 <label style="color:grey" class="control-label">Si hubiese terminos y condiciones de uso, los aceptaría</label>
                 <br />
                 <br />

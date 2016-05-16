@@ -2,6 +2,30 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
         <form runat="server">
+            
+            <div id="Div_Error" runat="server" style="margin-top:100px;width:50%" class="alert alert-danger container text-center" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                <strong>Error!: </strong>
+                <asp:label id="Mensaje" runat="server" text="Mensaje"></asp:label>
+            </div>
+
+
+            <div id="subir_perfil" visible="false" runat="server" class="container" style="margin-top:100px;">
+                <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
+                    <div class="panel-heading">
+                        <label class="control-label">Subir foto de perfil</label>
+                    </div>
+                    <div class="panel-body">
+                        <label style="font-weight:normal">Indica la URL de la imagen:</label>
+                        <asp:TextBox runat="server" style="width:100%;min-width:50px" CssClass="form-control" id="subir_textbox"/> 
+                        <div class="pull-right">
+                            <asp:Button runat="server" style="margin-right:1%" CssClass="btn btn-primary" Text="Confirmar" OnClick="Unnamed1_Click"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div runat="server" id="contenedor_principal" class="container" style="margin-top:100px;">
                 <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
                     <div class="panel-heading" style="height:55px">
@@ -12,9 +36,12 @@
                         <div>
                             <div class="col-xs-4">
 
-                                <div class="divimg" >   
-                                    <asp:ImageButton runat="server" ID="fotoperfil" CssClass="img" style="margin-left:5%;border-radius: 50%; border-color:Background;border-width: 4px;border-style: solid;" ImageUrl="Images/foto.jpg" width="128" height="128" alt="foto_perfil"/>
-                                    <div id="cambiar_foto" runat="server" style="padding-left:18%;padding-top:15px;text-align:left;padding-bottom" class="text">
+                                <img runat="server" id="fotoperfil_img"  style="margin-left:5%;border-radius: 50%; border-color:Background;border-width: 4px;border-style: solid;" src="Images/foto.jpg" width="128" height="128" alt="foto_perfil"/>
+
+                                <div id="text_subir" runat="server" visible="false" class="divimg" >   
+                                    <asp:ImageButton visible="false" runat="server" ID="fotoperfil_but" CssClass="img" style="margin-left:5%;border-radius: 50%; border-color:Background;border-width: 4px;border-style: solid;" ImageUrl="Images/foto.jpg" width="128" height="128" alt="foto_perfil" OnClick="fotoperfil_Click"/>
+                                    
+                                    <div id="cambiar_foto" runat="server" style="padding-left:18%;padding-top:15px;text-align:left;padding-bottom:0px" class="text">
                                         Cambiar foto
                                     </div>
                                 </div>
@@ -39,13 +66,13 @@
                                     <label class="control-label">F. Nacimiento:</label>
                                     <br />
                                     <div class="col-xs-4">
-                                        <asp:TextBox readonly="true" runat="server" style="width:100%;min-width:45px" CssClass="form-control" id="dia_usuario"/>
+                                        <asp:TextBox readonly="true" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" MaxLength="2" runat="server" style="width:100%;min-width:45px" CssClass="form-control" id="dia_usuario"/>
                                     </div>
                                     <div class="col-xs-4">
-                                        <asp:TextBox readonly="true" runat="server" style="width:100%;min-width:45px" CssClass="form-control" id="mes_usuario"/>
+                                        <asp:TextBox readonly="true" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" MaxLength="2" runat="server" style="width:100%;min-width:45px" CssClass="form-control" id="mes_usuario"/>
                                     </div>
                                     <div class="col-xs-4">
-                                        <asp:TextBox readonly="true" runat="server" style="width:100%;min-width:75px" CssClass="form-control" id="ano_usuario"/>
+                                        <asp:TextBox readonly="true" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" MaxLength="4" runat="server" style="width:100%;min-width:75px" CssClass="form-control" id="ano_usuario"/>
                                     </div>
                                </div>
                                <br /><br /> <br />
@@ -66,13 +93,13 @@
             <div id="pass" runat="server" visible="false" style="margin-top:30px;" class="container" >
                 <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
                     <div class="panel-heading">
-                        <asp:Button runat="server" id="pass_btn" visible="true" style="float:right" CssClass="btn btn-default" text="Cambiar Contraseña" />
+                        <asp:Button runat="server" id="pass_btn" visible="true" style="float:right" CssClass="btn btn-default" text="Cambiar Contraseña" OnClick="pass_btn_Click" />
                         <label style="font-size:25px"><b>Cambiar contraseña</b></label>
                     </div>
 
                     <div class="panel-body">
                         <label class="control-label">Email:</label>
-                        <asp:TextBox runat="server" style="width:95%;min-width:50px" CssClass="form-control" id="email_usuario"/>
+                        <asp:TextBox runat="server" style="width:100%;min-width:50px" CssClass="form-control" id="email_usuario"/>
                         <br />
 
                         <div class="col-xs-4">
@@ -92,9 +119,10 @@
                     </div>
                 </div>
             </div>
-       
-    
-            <div id="eventos_usuario" runat="server"  class="container" style="margin-top:30px;">
+
+            
+
+            <div id="eventos_usuario" runat="server" class="container" style="margin-top:30px;">
                 <div class="panel panel-default" style="margin-right:20%;margin-left:20%;min-width:500px">
                     <div class="panel-heading">
                         <label class="control-label">Ultimos eventos</label>
@@ -105,12 +133,8 @@
                 </div>
             </div>
 
-        <div id="Div_Error" runat="server" style="margin-top:100px;width:50%" class="alert alert-danger container text-center" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            <span class="sr-only">Error:</span>
-            <strong>Error!: </strong>
-            <asp:label id="Mensaje" runat="server" text="Mensaje"></asp:label>
-        </div>
+        
 
-       </form>
+              
+        </form>
 </asp:Content>
